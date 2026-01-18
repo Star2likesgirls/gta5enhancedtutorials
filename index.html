@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA5 Enhanced Tutorials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 700;
+            background: linear-gradient(45deg, #00ff88, #00ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #aaaaaa;
+            font-weight: 300;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(0, 255, 136, 0.2);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 255, 136, 0.6);
+            box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .card-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #00ff88;
+        }
+
+        .card p {
+            color: #cccccc;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 30px;
+            text-align: center;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GTA5 ENHANCED TUTORIALS</h1>
+        <p class="subtitle">Scripts, Tips & Money Methods</p>
+    </header>
+
+    <div class="container">
+        <div class="card" onclick="window.location.href='cars.zip'">
+            <div class="card-icon">🚗</div>
+            <h2>Modded Cars (YIM)</h2>
+            <p>Custom vehicle scripts and modifications for YimMenu</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='CEO & HANGER AutoSoure Cargo.lua'">
+            <div class="card-icon">📜</div>
+            <h2>Lua Scripts (YIM)</h2>
+            <p>Advanced Lua scripts for enhanced gameplay</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='tutorials.html'">
+            <div class="card-icon">💰</div>
+            <h2>Money Methods</h2>
+            <p>Proven techniques and scripts to maximize earnings</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GTA5 Enhanced Tutorials | For Educational Purposes Only</p>
+    </footer>
+</body>
+</html>
